@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(51, 51, 51);
+}
+
+#barranav{
+    background-color: rgb(71, 39, 128);
+    color: white;
+    margin-bottom: 80px;
+}
+
+#logo-nav span{
+    opacity: 1;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: fadeIn 7s infinite linear;
+    transition: 0.1s;
+}
+
+#containerBanner{
+    margin-top: 60px;
+    background-color: #7677b2;
+}
+
+#containerCarousel{
+    margin-top: 70px;
+}
+
+#carouselCaptions{
+    margin-top: 10px;
+}
+
+#cardsDress{
+    width: 288px;
+}
+
+#sizetable{
+    margin-top: 15px;
+}
+
+footer{
+    background-color: rgb(96, 57, 167);
+}
+
+#copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#banner-image{
+    animation: fadeIn 10s infinite;
+    -webkit-animation: fadeIn 10s infinite;
+    -moz-animation: fadeIn 10s infinite;
+    -o-animation: fadeIn 10s infinite;
+    -ms-animation: fadeIn 10s infinite;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 1; }
+    50% { opacity: 0;}
+    100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn {
+    0% { opacity: 1; }
+    50% { opacity: 0;}
+    100% { opacity: 1; }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 1; }
+    50% { opacity: 0;}
+    100% { opacity: 1; }
+}
+  
+@-o-keyframes fadeIn {
+    0% { opacity: 1; }
+    50% { opacity: 0;}
+    100% { opacity: 1; }
+}
+  
+@-ms-keyframes fadeIn {
+    0% { opacity: 1; }
+    50% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+@media screen and (grid) {
+    .card-img-top {
+        flex: 50%;
+        max-width: 600px;
+        max-height: 800px;
+    }
+}
+@media screen and (grid) {
+    .card-img-top {
+        flex: 100%;
+        max-width: 600px;
+        max-height: 800px;
+    }
+}

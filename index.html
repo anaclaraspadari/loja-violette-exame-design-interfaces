@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Violette - Por Ana Clara Spadari</title>
+    <link rel="preload" href="index.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" as="script">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom" id="barranav">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a class="navbar-brand" href="#" id="logo-nav">
+                        <span><img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/20/ffffff/violet-flower.png" alt="violet-flower" loading="lazy">Loja Violette<img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/20/ffffff/violet-flower.png" alt="violet-flower" loading="lazy"></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dress" target="_top">Modelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sizetable" target="_top">Tabela de Medidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" target="_top">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid" id="containerBanner">
+            <div class="d-flex flex-column justify-items-center align-items-center">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12" id="banner-image">
+                        <span><img src="photos/banner1-original.webp" class="d-block w-100" alt="banner-site" loading="lazy"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="photos/carousel-img1.webp" class="d-block w-100" alt="carousel-banner1" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/carousel-img2.webp" class="d-block w-100" alt="carousel-banner2" loading="lazy">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="container-fluid" id="dress">
+                <div class="d-flex flex-column justify-items-center align-items-center" id="dressContainer">
+                    <h1 style="margin-bottom: 30px;" id="#dressh1">Modelos Mais Vendidos</h1>
+                    <div class="row" id="dressContent">
+                    <div class="col-md-4">
+                        <div class="card" id="cardsdress1">
+                        <img src="photos/vestidowinter.webp" id="dress1" width="200" height="380" class="card-img-top" alt="Card Image 1" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido Winter</h5>
+                            <p class="card-text">R$ 250</p>
+                            <button class="btn btn-custom" style="background-color: rgb(96, 57, 167); color: white;" data-bs-toggle="modal" data-bs-target="#modal1">Comprar</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" id="cardsdress2">
+                        <img src="photos/vestidonightingale.webp" id="dress2" width="200" height="380" class="card-img-top" alt="Card Image 2" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido Nightingale</h5>
+                            <p class="card-text">R$ 320</p>
+                            <button class="btn btn-custom" style="background-color: rgb(96, 57, 167); color: white;" data-bs-toggle="modal" data-bs-target="#modal2">Comprar</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" id="cardsdress3">
+                        <img src="photos/vestidosapphire.webp" id="dress3" width="220" height="380" class="card-img-top" alt="Card Image 3" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido Sapphire</h5>
+                            <p class="card-text">R$ 325</p>
+                            <button class="btn btn-custom" style="background-color: rgb(96, 57, 167); color: white;" data-bs-toggle="modal" data-bs-target="#modal3">Comprar</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        <img src="photos/vestidowinter.webp" width="300" height="200" class="img-fluid rounded mx-auto d-block" style="margin-bottom: 15px;" alt="Card Image 1" loading="lazy">
+                        <h5>Vestido Winter</h5>
+                        <p>R$ 250,00</p>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Tamanhos</option>
+                            <option value="1">PP</option>
+                            <option value="2">P</option>
+                            <option value="3">M</option>
+                            <option value="4">G</option>
+                            <option value="5">XG</option>
+                            <option value="3">XXG</option>
+                        </select>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn btn-custom" style="background-color: rgb(96, 57, 167); color: white;" data-bs-dismiss="modal">Comprar</button>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        <img src="photos/vestidonightingale.webp" width="300" height="200" class="img-fluid rounded mx-auto d-block" style="margin-bottom: 15px;" alt="Card Image 2" loading="lazy">
+                        <h5>Vestido Nightingale</h5>
+                        <p>R$ 320,00</p>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Tamanhos</option>
+                            <option value="1">PP</option>
+                            <option value="2">P</option>
+                            <option value="3">M</option>
+                            <option value="4">G</option>
+                            <option value="5">XG</option>
+                            <option value="3">XXG</option>
+                        </select>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn btn-custom" style="background-color: rgb(96, 57, 167); color: white;" data-bs-dismiss="modal">Comprar</button>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        <img src="photos/vestidosapphire.webp" width="300" height="200" class="img-fluid rounded mx-auto d-block" style="margin-bottom: 15px;" alt="Card Image 3" loading="lazy">
+                        <h5>Vestido Sapphire</h5>
+                        <p>R$ 325,00</p>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Tamanhos</option>
+                            <option value="1">PP</option>
+                            <option value="2">P</option>
+                            <option value="3">M</option>
+                            <option value="4">G</option>
+                            <option value="5">XG</option>
+                            <option value="3">XXG</option>
+                        </select>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn btn-custom" style="background-color: rgb(96, 57, 167); color: white;" data-bs-dismiss="modal">Comprar</button>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="container" id="sizetable">
+                <h1 class="h1-table" style="text-align: center;">Tabela de Medidas</h1>
+                <p style="text-align: center;">OBS: Os tamanhos podem variar de modelo para modelo</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tamanho</th>
+                                <th scope="col">Comprimento</th>
+                                <th scope="col">Ombro</th>
+                                <th scope="col">Busto</th>
+                                <th scope="col">Cintura</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">PP</th>
+                                <td>107cm</td>
+                                <td>36cm</td>
+                                <td>73-89cm</td>
+                                <td>56-71cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">P</th>
+                                <td>107cm</td>
+                                <td>37cm</td>
+                                <td>78-94cm</td>
+                                <td>61-76cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">M</th>
+                                <td>109cm</td>
+                                <td>38cm</td>
+                                <td>83-99cm</td>
+                                <td>66-81cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">G</th>
+                                <td>109cm</td>
+                                <td>39cm</td>
+                                <td>88-104cm</td>
+                                <td>71-86cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">XG</th>
+                                <td>111cm</td>
+                                <td>40cm</td>
+                                <td>93-110cm</td>
+                                <td>76-91cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">XXG</th>
+                                <td>111cm</td>
+                                <td>41cm</td>
+                                <td>98-115cm</td>
+                                <td>81-96cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="bg-custom text-light text-center text-md-left" id="contact">
+        <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                <h2 style="margin-bottom: 50px;">Loja Violette</h2>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="text-light">Sobre nós</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="text-light">Produtos</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="text-light">Formas de pagamento</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="text-light">Envio</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!" class="text-light">Contato</a>
+                    </h6>
+                </div>
+                </div>
+        <hr class="my-5">
+            <div class="text-center mb-5">
+                <a href="#" class="text-light me-4">
+                    <img width="25" height="25" src="https://img.icons8.com/ios/25/ffffff/twitterx--v2.png" alt="twitterx--v2" loading="lazy">
+                </a>
+                <a href="#" class="text-light me-4">
+                    <img width="25" height="25" src="https://img.icons8.com/ios-filled/2s5/ffffff/facebook-new.png" alt="facebook-new" loading="lazy">
+                </a>
+                <a href="#" class="text-light me-4">
+                    <img width="25" height="25" src="https://img.icons8.com/ios/25/ffffff/instagram-new--v1.png" alt="instagram-new--v1" loading="lazy">
+                </a>
+            </div>
+        </div>
+        <div class="text-center p-3" id="copyright">
+            © 2023 Copyright:
+            <a class="text-light" href="#">Loja Violette</a>
+        </div>
+    </footer>
+</body>
+</html>
